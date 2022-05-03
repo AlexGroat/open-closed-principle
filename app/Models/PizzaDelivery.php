@@ -5,10 +5,6 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Car {}
-
-class Boat {}
-
 class PizzaDelivery extends Model
 {
     use HasFactory;
@@ -18,7 +14,7 @@ class PizzaDelivery extends Model
         $prepare = 'place pizza in car';
         $travel = ' and drive down the road';
         $customer = ' then give pizza to happy customer';
-        return $prepare.$travel.$customer;
+        return $prepare . $travel . $customer;
     }
 }
 
